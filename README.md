@@ -41,7 +41,7 @@ This integration connects to your local ActivityWatch instance and exposes your 
 3. Enter:
    - **Host** — IP address or hostname of your ActivityWatch server
    - **Port** — Default is `5600`
-   - **API Key** — Optional, for future use
+   - **API Key** — Optional, sent as a `Bearer` token if your ActivityWatch server requires authentication
    - **Device Name** — A label for this machine (e.g. "Desktop", "Work Laptop")
 
 ## Entities
