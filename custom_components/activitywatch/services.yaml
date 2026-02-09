@@ -1,0 +1,32 @@
+query_stats:
+  name: Query Stats
+  description: Query historical activity statistics from ActivityWatch.
+  fields:
+    device_id:
+      name: Device ID
+      description: The device name configured in the integration.
+      required: true
+      example: "Desktop-PC"
+      selector:
+        text:
+    start_time:
+      name: Start Time
+      description: ISO timestamp for the start of the query period. Defaults to start of today.
+      required: false
+      example: "2024-01-01T00:00:00"
+      selector:
+        text:
+    end_time:
+      name: End Time
+      description: ISO timestamp for the end of the query period. Defaults to now.
+      required: false
+      example: "2024-01-01T23:59:59"
+      selector:
+        text:
+    category:
+      name: Category
+      description: Filter results by a specific category name.
+      required: false
+      example: "Work"
+      selector:
+        text:

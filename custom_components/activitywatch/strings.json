@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to ActivityWatch",
+        "description": "Set up a connection to your ActivityWatch instance.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "api_key": "API Key (optional)",
+          "device_name": "Device Name"
+        },
+        "data_description": {
+          "host": "Hostname or IP address of the ActivityWatch server.",
+          "port": "Port number (default: 5600).",
+          "api_key": "Optional API key for authentication.",
+          "device_name": "Name for this device in Home Assistant."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to ActivityWatch server.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This ActivityWatch instance is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ActivityWatch Options",
+        "data": {
+          "scan_interval": "Scan interval (seconds)",
+          "monitored_categories": "Monitored categories (comma-separated)"
+        },
+        "data_description": {
+          "scan_interval": "How often to poll ActivityWatch (5-300 seconds).",
+          "monitored_categories": "Comma-separated list of categories to create binary sensors for."
+        }
+      }
+    }
+  }
+}
